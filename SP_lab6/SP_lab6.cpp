@@ -191,17 +191,17 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             WS_CHILD | WS_VISIBLE |
             BS_PUSHBUTTON,
             200, 100, 100, 30, hWnd, (HMENU)102, hInst, NULL);
-        hHour = CreateWindow(TEXT("STATIC"), TEXT("Statika"),
+        hHour = CreateWindow(TEXT("STATIC"), TEXT("time"),
             WS_VISIBLE | WS_CHILD,
             50, 200, 90, 22,
             hWnd, (HMENU)103, NULL, NULL
         );
-        hMinute = CreateWindow(TEXT("STATIC"), TEXT("Statika"),
+        hMinute = CreateWindow(TEXT("STATIC"), TEXT("time"),
             WS_VISIBLE | WS_CHILD,
             150, 200, 90, 22,
             hWnd, (HMENU)103, NULL, NULL
         );
-        hSecond = CreateWindow(TEXT("STATIC"), TEXT("Statika"),
+        hSecond = CreateWindow(TEXT("STATIC"), TEXT("time"),
             WS_VISIBLE | WS_CHILD,
             250, 200, 90, 22,
             hWnd, (HMENU)103, NULL, NULL

@@ -161,15 +161,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             WS_VISIBLE | BS_AUTORADIOBUTTON | BS_LEFTTEXT |
             WS_GROUP | WS_TABSTOP,
             100, 140, 70, 30, hWnd, NULL, hInst, NULL);
-        kvadrat = CreateWindow(L"button", L"kvadrat", WS_CHILD |
+        kvadrat = CreateWindow(L"button", L"gubka bob", WS_CHILD |
             WS_VISIBLE | BS_AUTORADIOBUTTON | BS_LEFTTEXT,
-            200, 140, 70, 30, hWnd, NULL, hInst, NULL);
-        krug = CreateWindow(L"button", L"krug", WS_CHILD |
+            200, 140, 90, 30, hWnd, NULL, hInst, NULL);
+        krug = CreateWindow(L"button", L"krug misha", WS_CHILD |
             WS_VISIBLE | BS_AUTORADIOBUTTON | BS_LEFTTEXT,
-            300, 140, 70, 30, hWnd, NULL, hInst, NULL);
-        pi3da = CreateWindow(L"button", L"pi3da", WS_CHILD |
+            320, 140, 100, 30, hWnd, NULL, hInst, NULL);
+        pi3da = CreateWindow(L"button", L"zvezdddddddddddda", WS_CHILD |
             WS_VISIBLE | BS_AUTORADIOBUTTON | BS_LEFTTEXT,
-            400, 140, 70, 30, hWnd, NULL, hInst, NULL);
+            440, 140, 120, 30, hWnd, NULL, hInst, NULL);
         draw = CreateWindow(L"button", L"draw", WS_CHILD |
             WS_VISIBLE | BS_AUTOCHECKBOX | BS_LEFTTEXT,
             100, 180, 70, 30, hWnd, NULL, hInst, NULL);
@@ -186,10 +186,10 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         if (SendMessage(blue, BM_GETCHECK, 0, 0L) == BST_CHECKED) {
             data.color = 3;
         }
-        if (SendMessage(romb, BM_GETCHECK, 0, 0L) == BST_CHECKED) {
+        if (SendMessage( kvadrat, BM_GETCHECK, 0, 0L) == BST_CHECKED) {
             data.figure = 1;
         }
-        if (SendMessage(kvadrat, BM_GETCHECK, 0, 0L) == BST_CHECKED) {
+        if (SendMessage(romb, BM_GETCHECK, 0, 0L) == BST_CHECKED) {
             data.figure = 2;
         }
         if (SendMessage(krug, BM_GETCHECK, 0, 0L) == BST_CHECKED) {

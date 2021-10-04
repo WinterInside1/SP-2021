@@ -145,7 +145,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_CREATE:
     {
         GetClientRect(hWnd, &rc);
-        txt = { int((rc.right - rc.left) * 0.5), int((rc.bottom - rc.top) * 0.4), LPTSTR(L"Req Lox") };
+        txt = { int((rc.right - rc.left) * 0.5), int((rc.bottom - rc.top) * 0.4), LPTSTR(L"ASDASDASDAS") };
         break;
     }
     case WM_COMMAND:
